@@ -20,6 +20,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "usuario")
 public class Usuario extends BaseEntity {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Short id;

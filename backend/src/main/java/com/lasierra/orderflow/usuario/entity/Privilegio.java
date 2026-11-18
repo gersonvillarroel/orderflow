@@ -30,5 +30,4 @@ public class Privilegio extends BaseEntity {
 
     @Column(nullable = false)
     private String descripcion;
-
 }
