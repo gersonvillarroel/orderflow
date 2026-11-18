@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: orderflow
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orderflow
+    username: orderflow
+    password: orderflow
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false

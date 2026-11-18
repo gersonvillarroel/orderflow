@@ -1,0 +1,22 @@
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Logs
+*.log
+
+# Archivos locales
+/orderflow.zip
+*.ldb
