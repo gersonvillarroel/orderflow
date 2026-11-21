@@ -25,10 +25,10 @@ public class CustomUserDetails implements UserDetails {
         this.username = usuario.getUsername();
         this.password = usuario.getPassword();
         this.enabled = !usuario.getIsDeleted();
-        this.authorities = builAdAuthorities(usuario);
+        this.authorities = buildAuthorities(usuario);
     }
 
-    private static List<GrantedAuthority> builAdAuthorities(Usuario usuario) {
+    private static List<GrantedAuthority> buildAuthorities(Usuario usuario) {
         List<GrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority("ROLE_" + usuario.getRol().getNombre()));
         usuario.getRol().getPrivilegios().forEach(privilegio -> 
