@@ -13,3 +13,6 @@ spring:
 app:
   cors:
     allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200}
+  jwt:
+    secret: ${JWT_SECRET:+wG2CGAAb746g1iEMz6hD5u/RCjwuXR+OEfED+uztMM=}
+    expiration: ${JWT_EXPIRATION:86400000}
